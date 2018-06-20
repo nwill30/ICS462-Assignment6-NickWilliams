@@ -29,4 +29,19 @@ public class BufferManager {
     public void setTightPool(boolean tightPool) {
         this.tightPool = tightPool;
     }
+
+    public int requestBiffer(int requestSize){
+        int placeholder = 0;
+
+        return placeholder;
+    }
+
+    public void returnBuffer(int addess){
+
+    }
+
+    public String getStatus(){
+
+        return "null";
+    }
 }
