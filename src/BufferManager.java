@@ -58,11 +58,25 @@ public class BufferManager {
                 return "-2";
             }else if (requestResponse == "-1"){
                 return "-1";
-            }else {return requestResponse;}
+            }else {
+                this.tightPool = checkTightConstraint();
+                return requestResponse;
+            }
 
         }
 
         return placeholder;
+    }
+
+    private boolean checkTightConstraint() {
+        int free = 0;
+        for(int i = 0;i < bufferList.size();i++){
+            if(bufferList.get(i).isBufferFree()){
+                free = free+1;
+            }
+        }
+
+        return free < 2;
     }
 
     public void returnBuffer(Buffer addess){
@@ -71,6 +85,7 @@ public class BufferManager {
             if(bufferList.get(i).reclaimBuffer(addess)==addess){
 
                 System.out.print(String.format("Buffer %s reclaimed from parent %s, %s in the buffer list. ",addess,bufferList.get(i),i));
+                System.out.println("The number of remaining buffers is "+bufferList.size());
                 break;
             }
         }
