@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bacd3ac8-d016-4bc5-92cd-455e2176a171" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/BufferManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BufferManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Buffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Buffer.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,7 +14,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
@@ -32,13 +32,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Buffer.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Buffer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Buffer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="94" selection-start-line="94" selection-end-line="94" />
+            <state relative-caret-position="540">
+              <caret line="165" column="1" selection-start-line="165" selection-start-column="1" selection-end-line="165" selection-end-column="1" />
               <folding>
+                <element signature="e#1226#1227#0" expanded="true" />
+                <element signature="e#1289#1290#0" expanded="true" />
                 <element signature="method#splitBuffer#0;class#Buffer#0" />
+                <element signature="method#reclaimBuffer#0;class#Buffer#0" />
                 <element signature="e#2966#2967#0" expanded="true" />
                 <element signature="e#2996#2997#0" expanded="true" />
                 <element signature="e#3027#3028#0" expanded="true" />
@@ -57,10 +60,10 @@
                 <element signature="e#3454#3455#0" expanded="true" />
                 <element signature="e#3492#3493#0" expanded="true" />
                 <element signature="e#3526#3527#0" expanded="true" />
-                <element signature="e#3563#3564#0" expanded="true" />
-                <element signature="e#3613#3614#0" expanded="true" />
-                <element signature="e#3660#3661#0" expanded="true" />
-                <element signature="e#3705#3706#0" expanded="true" />
+                <element signature="e#3773#3774#0" expanded="true" />
+                <element signature="e#3822#3823#0" expanded="true" />
+                <element signature="e#3870#3871#0" expanded="true" />
+                <element signature="e#3952#3953#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -81,9 +84,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Buffer.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/BufferManager.java" />
+        <option value="$PROJECT_DIR$/src/Buffer.java" />
       </list>
     </option>
   </component>
@@ -276,7 +279,10 @@
         <state relative-caret-position="825">
           <caret line="57" column="38" selection-start-line="57" selection-start-column="38" selection-end-line="57" selection-end-column="38" />
           <folding>
+            <element signature="e#1226#1227#0" expanded="true" />
+            <element signature="e#1289#1290#0" expanded="true" />
             <element signature="method#splitBuffer#0;class#Buffer#0" />
+            <element signature="method#reclaimBuffer#0;class#Buffer#0" />
             <element signature="e#2966#2967#0" expanded="true" />
             <element signature="e#2996#2997#0" expanded="true" />
             <element signature="e#3027#3028#0" expanded="true" />
@@ -295,10 +301,10 @@
             <element signature="e#3454#3455#0" expanded="true" />
             <element signature="e#3492#3493#0" expanded="true" />
             <element signature="e#3526#3527#0" expanded="true" />
-            <element signature="e#3563#3564#0" expanded="true" />
-            <element signature="e#3613#3614#0" expanded="true" />
-            <element signature="e#3660#3661#0" expanded="true" />
-            <element signature="e#3705#3706#0" expanded="true" />
+            <element signature="e#3773#3774#0" expanded="true" />
+            <element signature="e#3822#3823#0" expanded="true" />
+            <element signature="e#3870#3871#0" expanded="true" />
+            <element signature="e#3952#3953#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -315,7 +321,10 @@
         <state relative-caret-position="735">
           <caret line="67" column="48" selection-start-line="67" selection-start-column="48" selection-end-line="67" selection-end-column="48" />
           <folding>
+            <element signature="e#1226#1227#0" expanded="true" />
+            <element signature="e#1289#1290#0" expanded="true" />
             <element signature="method#splitBuffer#0;class#Buffer#0" />
+            <element signature="method#reclaimBuffer#0;class#Buffer#0" />
             <element signature="e#2966#2967#0" expanded="true" />
             <element signature="e#2996#2997#0" expanded="true" />
             <element signature="e#3027#3028#0" expanded="true" />
@@ -334,10 +343,10 @@
             <element signature="e#3454#3455#0" expanded="true" />
             <element signature="e#3492#3493#0" expanded="true" />
             <element signature="e#3526#3527#0" expanded="true" />
-            <element signature="e#3563#3564#0" expanded="true" />
-            <element signature="e#3613#3614#0" expanded="true" />
-            <element signature="e#3660#3661#0" expanded="true" />
-            <element signature="e#3705#3706#0" expanded="true" />
+            <element signature="e#3773#3774#0" expanded="true" />
+            <element signature="e#3822#3823#0" expanded="true" />
+            <element signature="e#3870#3871#0" expanded="true" />
+            <element signature="e#3952#3953#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -368,7 +377,10 @@
         <state relative-caret-position="833">
           <caret line="67" column="48" selection-start-line="67" selection-start-column="48" selection-end-line="67" selection-end-column="48" />
           <folding>
+            <element signature="e#1226#1227#0" expanded="true" />
+            <element signature="e#1289#1290#0" expanded="true" />
             <element signature="method#splitBuffer#0;class#Buffer#0" />
+            <element signature="method#reclaimBuffer#0;class#Buffer#0" />
             <element signature="e#2966#2967#0" expanded="true" />
             <element signature="e#2996#2997#0" expanded="true" />
             <element signature="e#3027#3028#0" expanded="true" />
@@ -387,43 +399,18 @@
             <element signature="e#3454#3455#0" expanded="true" />
             <element signature="e#3492#3493#0" expanded="true" />
             <element signature="e#3526#3527#0" expanded="true" />
-            <element signature="e#3563#3564#0" expanded="true" />
-            <element signature="e#3613#3614#0" expanded="true" />
-            <element signature="e#3660#3661#0" expanded="true" />
-            <element signature="e#3705#3706#0" expanded="true" />
+            <element signature="e#3773#3774#0" expanded="true" />
+            <element signature="e#3822#3823#0" expanded="true" />
+            <element signature="e#3870#3871#0" expanded="true" />
+            <element signature="e#3952#3953#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Buffer.java">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="94" selection-start-line="94" selection-end-line="94" />
-          <folding>
-            <element signature="method#splitBuffer#0;class#Buffer#0" />
-            <element signature="e#2966#2967#0" expanded="true" />
-            <element signature="e#2996#2997#0" expanded="true" />
-            <element signature="e#3027#3028#0" expanded="true" />
-            <element signature="e#3057#3058#0" expanded="true" />
-            <element signature="e#3092#3093#0" expanded="true" />
-            <element signature="e#3126#3127#0" expanded="true" />
-            <element signature="e#3159#3160#0" expanded="true" />
-            <element signature="e#3188#3189#0" expanded="true" />
-            <element signature="e#3221#3222#0" expanded="true" />
-            <element signature="e#3250#3251#0" expanded="true" />
-            <element signature="e#3283#3284#0" expanded="true" />
-            <element signature="e#3312#3313#0" expanded="true" />
-            <element signature="e#3349#3350#0" expanded="true" />
-            <element signature="e#3382#3383#0" expanded="true" />
-            <element signature="e#3420#3421#0" expanded="true" />
-            <element signature="e#3454#3455#0" expanded="true" />
-            <element signature="e#3492#3493#0" expanded="true" />
-            <element signature="e#3526#3527#0" expanded="true" />
-            <element signature="e#3563#3564#0" expanded="true" />
-            <element signature="e#3613#3614#0" expanded="true" />
-            <element signature="e#3660#3661#0" expanded="true" />
-            <element signature="e#3705#3706#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="360">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
@@ -434,10 +421,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/Buffer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="540">
+          <caret line="165" column="1" selection-start-line="165" selection-start-column="1" selection-end-line="165" selection-end-column="1" />
+          <folding>
+            <element signature="e#1226#1227#0" expanded="true" />
+            <element signature="e#1289#1290#0" expanded="true" />
+            <element signature="method#splitBuffer#0;class#Buffer#0" />
+            <element signature="method#reclaimBuffer#0;class#Buffer#0" />
+            <element signature="e#2966#2967#0" expanded="true" />
+            <element signature="e#2996#2997#0" expanded="true" />
+            <element signature="e#3027#3028#0" expanded="true" />
+            <element signature="e#3057#3058#0" expanded="true" />
+            <element signature="e#3092#3093#0" expanded="true" />
+            <element signature="e#3126#3127#0" expanded="true" />
+            <element signature="e#3159#3160#0" expanded="true" />
+            <element signature="e#3188#3189#0" expanded="true" />
+            <element signature="e#3221#3222#0" expanded="true" />
+            <element signature="e#3250#3251#0" expanded="true" />
+            <element signature="e#3283#3284#0" expanded="true" />
+            <element signature="e#3312#3313#0" expanded="true" />
+            <element signature="e#3349#3350#0" expanded="true" />
+            <element signature="e#3382#3383#0" expanded="true" />
+            <element signature="e#3420#3421#0" expanded="true" />
+            <element signature="e#3454#3455#0" expanded="true" />
+            <element signature="e#3492#3493#0" expanded="true" />
+            <element signature="e#3526#3527#0" expanded="true" />
+            <element signature="e#3773#3774#0" expanded="true" />
+            <element signature="e#3822#3823#0" expanded="true" />
+            <element signature="e#3870#3871#0" expanded="true" />
+            <element signature="e#3952#3953#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

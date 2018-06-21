@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Buffer {
 
     private int maxSize;
@@ -12,19 +14,19 @@ public class Buffer {
     private Object address;
     private Buffer thisBuffer = this;
 
-    public void Buffer(int maxSize, int minSize){
+    public void Buffer(int maxSize, int minSize) {
         this.maxSize = maxSize;
         this.minSize = minSize;
         this.currentSize = maxSize;
     }
 
-    public void Buffer(int maxSize, int minSize, int requestSize){
+    public void Buffer(int maxSize, int minSize, int requestSize) {
         this.maxSize = maxSize;
         this.minSize = minSize;
         this.currentSize = maxSize;
     }
 
-    public Object Buffer(int maxSize, int minSize, int requestSize, Buffer parent){
+    public Object Buffer(int maxSize, int minSize, int requestSize, Buffer parent) {
         this.maxSize = maxSize;
         this.minSize = minSize;
         this.currentSize = maxSize;
@@ -33,23 +35,23 @@ public class Buffer {
 
     }
 
-    public void Buffer(int maxSize, int minSize, Buffer parent){
+    public void Buffer(int maxSize, int minSize, Buffer parent) {
         this.maxSize = maxSize;
         this.minSize = minSize;
         this.currentSize = maxSize;
 
     }
 
-    public Object requestBuffer(int requestSize){
+    public Object requestBuffer(int requestSize) {
         return this.address = checkRequest(requestSize);
     }
 
     private Object checkRequest(int requestSize) {
-        if(requestSize>this.maxSize){
+        if (requestSize > this.maxSize) {
             return "-2";
-        }else if(requestSize > currentSize){
+        } else if (requestSize > currentSize) {
             return "-1";
-        }else {
+        } else {
             if (currentSize <= 8) {
                 setControlWord(requestSize);
                 return this.thisBuffer;
@@ -57,7 +59,7 @@ public class Buffer {
                 setControlWord(requestSize);
                 return this.thisBuffer;
             } else {
-               return splitBuffer(requestSize);
+                return splitBuffer(requestSize);
             }
         }
     }
@@ -65,10 +67,10 @@ public class Buffer {
     private Object splitBuffer(int requestSize) {
 
         Buffer childA = new Buffer();
-        childA.Buffer(this.maxSize/2,7,this.thisBuffer);
+        childA.Buffer(this.maxSize / 2, 7, this.thisBuffer);
         this.childA = childA;
         Buffer childB = new Buffer();
-        childB.Buffer(this.maxSize/2,7,this.thisBuffer);
+        childB.Buffer(this.maxSize / 2, 7, this.thisBuffer);
         this.childB = childB;
         this.bufferFree = false;
         this.bufferSplit = true;
@@ -77,23 +79,23 @@ public class Buffer {
 
     }
 
-    public Buffer reclaimBuffer(Buffer returnedAddress){
+    public Buffer reclaimBuffer(Buffer returnedAddress) {
 
-        if(returnedAddress == this.thisBuffer){
+        if (returnedAddress == this.thisBuffer) {
             this.controlWord = null;
             this.bufferFree = true;
             this.bufferSplit = false;
             return this.thisBuffer;
-        }else if(this.childA == null && this.childB == null){
+        } else if (this.childA == null && this.childB == null) {
             return new Buffer();
-        }else if(this.bufferSplit = true){
-            if(childA.reclaimBuffer(returnedAddress) == returnedAddress || childB.reclaimBuffer(returnedAddress) == returnedAddress) {
+        } else if (this.bufferSplit = true) {
+            if (childA.reclaimBuffer(returnedAddress) == returnedAddress || childB.reclaimBuffer(returnedAddress) == returnedAddress) {
                 this.childA = null;
                 this.childB = null;
                 this.bufferFree = true;
                 this.bufferSplit = false;
                 return returnedAddress;
-            }else{
+            } else {
                 return new Buffer();
             }
 
@@ -137,13 +139,28 @@ public class Buffer {
         return controlWord;
     }
 
-    public String bufferToString(){
-        return  this.thisBuffer.toString();
+    public String bufferToString() {
+        return this.thisBuffer.toString();
     }
 
-    private void setControlWord(int request){
-        this.controlWord = request+"";
+    private void setControlWord(int request) {
+        this.controlWord = this.thisBuffer.toString() + " " + getSibling();
     }
 
+    private String getSibling() {
+        String sibling = "null";
+        ArrayList<Buffer> siblings = this.parent.getChildren();
+        if (siblings.get(0) == this) {
+            return siblings.get(1).toString();
+        } else {
+            return siblings.get(0).toString();
+        }
+    }
 
+    private ArrayList<Buffer> getChildren() {
+        ArrayList<Buffer> children = new ArrayList<>();
+        children.add(childA);
+        children.add(childB);
+        return children;
+    }
 }
