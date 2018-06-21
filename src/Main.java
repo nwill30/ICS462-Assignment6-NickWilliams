@@ -16,6 +16,8 @@ public class Main {
         testBufferManager.BufferManager(listSize,maxSize,minSize);
         Object requestReqponse = testBufferManager.requestBuffer(requestSize);
         System.out.print("This buffer address is " + requestReqponse + " Printed "+((Buffer) requestReqponse).bufferToString());
+        testBufferManager.returnBuffer((Buffer) requestReqponse);
+
 
     }
 }

@@ -65,7 +65,15 @@ public class BufferManager {
         return placeholder;
     }
 
-    public void returnBuffer(int addess){
+    public void returnBuffer(Buffer addess){
+
+        for(int i = 0;i < bufferList.size();i++){
+            if(bufferList.get(i).reclaimBuffer(addess)==addess){
+
+                System.out.print(String.format("Buffer %s reclaimed from parent %s, %s in the buffer list. ",addess,bufferList.get(i),i));
+                break;
+            }
+        }
 
     }
 

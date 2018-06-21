@@ -77,6 +77,30 @@ public class Buffer {
 
     }
 
+    public Buffer reclaimBuffer(Buffer returnedAddress){
+
+        if(returnedAddress == this.thisBuffer){
+            this.controlWord = null;
+            this.bufferFree = true;
+            this.bufferSplit = false;
+            return this.thisBuffer;
+        }else if(this.childA == null && this.childB == null){
+            return new Buffer();
+        }else if(this.bufferSplit = true){
+            if(childA.reclaimBuffer(returnedAddress) == returnedAddress || childB.reclaimBuffer(returnedAddress) == returnedAddress) {
+                this.childA = null;
+                this.childB = null;
+                this.bufferFree = true;
+                this.bufferSplit = false;
+                return returnedAddress;
+            }else{
+                return new Buffer();
+            }
+
+        }
+        return new Buffer();
+    }
+
     public int getMaxSize() {
         return maxSize;
     }
