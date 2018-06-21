@@ -83,7 +83,7 @@ public class BufferManager {
 
         for(int i = 0;i < bufferList.size();i++){
             if(bufferList.get(i).reclaimBuffer(addess)==addess){
-
+                this.tightPool = checkTightConstraint();
                 System.out.print(String.format("Buffer %s reclaimed from parent %s, %s in the buffer list. ",addess,bufferList.get(i),i));
                 System.out.println("The number of remaining buffers is "+bufferList.size());
                 break;
