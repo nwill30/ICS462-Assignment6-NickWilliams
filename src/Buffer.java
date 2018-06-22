@@ -30,6 +30,7 @@ public class Buffer {
         this.maxSize = maxSize;
         this.minSize = minSize;
         this.currentSize = maxSize;
+        this.parent = parent;
         return this.address = checkRequest(requestSize);
 
 
@@ -39,6 +40,7 @@ public class Buffer {
         this.maxSize = maxSize;
         this.minSize = minSize;
         this.currentSize = maxSize;
+        this.parent = parent;
 
     }
 
@@ -74,6 +76,7 @@ public class Buffer {
         this.childB = childB;
         this.bufferFree = false;
         this.bufferSplit = true;
+
 
         return childA.checkRequest(requestSize);
 

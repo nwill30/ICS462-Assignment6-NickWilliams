@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.LinkedList;
 
 public class BufferManager {
@@ -93,10 +94,26 @@ public class BufferManager {
     }
 
     public String getStatus(){
-
-        return "null";
+        if(isTightPool()){
+            return "tight";
+        }else{
+            return "OK";
+        }
     }
 
+    public String bufferDebug(){
+        String bufferStatus = null;
+        ArrayList bufferStatusCount = new ArrayList();
+        int size512Count = 0;
+        for(int i = 0;i < this.bufferList.size();i++){
+            if(this.bufferList.get(i).isBufferFree()){
+                size512Count = size512Count + 1;
+            }
+        }
+
+        bufferStatus = bufferStatus + bufferStatusCount.get(0) + " 512 size buffers ";
+        return bufferStatus + ", Status: " + getStatus();
+    }
 
     public Buffer getBuffer(Buffer requestResponse) {
         Buffer returnBuffer = bufferList.get(bufferList.indexOf(requestResponse));
