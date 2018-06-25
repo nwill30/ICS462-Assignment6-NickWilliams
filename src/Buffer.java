@@ -166,4 +166,23 @@ public class Buffer {
         children.add(childB);
         return children;
     }
+
+    public void getChildrenStatus() {
+        ArrayList childrenStatus = new ArrayList();
+        if(this.childA!= null && this.childA.isBufferFree()){
+            childrenStatus.add(this.childA.getStatus());
+        }else if(this.childA != null){
+            this.childA.getChildrenStatus();
+        }
+
+        if(this.childB != null && this.childB.isBufferFree()){
+            childrenStatus.add(this.childB.getStatus());
+        }else if(this.childB != null){
+            this.childB.getChildrenStatus();
+        }
+    }
+
+    private Object getStatus() {
+        return String.format("%s size buffer", this.currentSize);
+    }
 }
