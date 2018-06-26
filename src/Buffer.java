@@ -1,3 +1,4 @@
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Buffer {
@@ -148,6 +149,7 @@ public class Buffer {
 
     private void setControlWord(int request) {
         this.controlWord = this.thisBuffer.toString() + " " + getSibling();
+        this.bufferFree = false;
     }
 
     private String getSibling() {
@@ -167,22 +169,23 @@ public class Buffer {
         return children;
     }
 
-    public void getChildrenStatus() {
+    public ArrayList getChildrenStatus() {
         ArrayList childrenStatus = new ArrayList();
         if(this.childA!= null && this.childA.isBufferFree()){
             childrenStatus.add(this.childA.getStatus());
         }else if(this.childA != null){
-            this.childA.getChildrenStatus();
+            childrenStatus.addAll(this.childA.getChildrenStatus());
         }
 
         if(this.childB != null && this.childB.isBufferFree()){
             childrenStatus.add(this.childB.getStatus());
         }else if(this.childB != null){
-            this.childB.getChildrenStatus();
+            childrenStatus.addAll(this.childB.getChildrenStatus());
         }
+        return childrenStatus;
     }
 
-    private Object getStatus() {
+    public String getStatus() {
         return String.format("%s size buffer", this.currentSize);
     }
 }

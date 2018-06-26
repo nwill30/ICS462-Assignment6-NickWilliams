@@ -4,6 +4,7 @@
     <list default="true" id="bacd3ac8-d016-4bc5-92cd-455e2176a171" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Buffer.java" afterPath="$PROJECT_DIR$/src/Buffer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BufferManager.java" afterPath="$PROJECT_DIR$/src/BufferManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,45 +22,50 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="123">
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BufferManager.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BufferManager.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/BufferManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="111" column="59" lean-forward="false" selection-start-line="111" selection-start-column="59" selection-end-line="111" selection-end-column="59" />
+            <state relative-caret-position="121">
+              <caret line="164" column="61" lean-forward="true" selection-start-line="164" selection-start-column="61" selection-end-line="164" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#BufferManager#0;class#BufferManager#0" expanded="false" />
                 <element signature="method#buildBufferList#0;class#BufferManager#0" expanded="false" />
-                <element signature="method#requestBuffer#0;class#BufferManager#0" expanded="false" />
                 <element signature="method#checkTightConstraint#0;class#BufferManager#0" expanded="false" />
                 <element signature="method#returnBuffer#0;class#BufferManager#0" expanded="false" />
                 <element signature="method#getStatus#0;class#BufferManager#0" expanded="false" />
+                <element signature="method#bufferDebug#0;class#BufferManager#0" expanded="false" />
+                <element signature="method#getBufferListStatus#0;class#BufferManager#0" expanded="false" />
                 <element signature="method#getBuffer#0;class#BufferManager#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Buffer.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Buffer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Buffer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
-              <caret line="180" column="44" lean-forward="true" selection-start-line="180" selection-start-column="44" selection-end-line="180" selection-end-column="44" />
+            <state relative-caret-position="56">
+              <caret line="149" column="45" lean-forward="false" selection-start-line="149" selection-start-column="45" selection-end-line="149" selection-end-column="45" />
               <folding>
-                <element signature="e#1286#1287#0" expanded="true" />
-                <element signature="e#1349#1350#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="method#Buffer#0;class#Buffer#0" expanded="false" />
+                <element signature="method#Buffer#1;class#Buffer#0" expanded="false" />
+                <element signature="method#Buffer#2;class#Buffer#0" expanded="false" />
+                <element signature="method#Buffer#3;class#Buffer#0" expanded="false" />
+                <element signature="method#checkRequest#0;class#Buffer#0" expanded="false" />
+                <element signature="method#splitBuffer#0;class#Buffer#0" expanded="false" />
                 <element signature="method#reclaimBuffer#0;class#Buffer#0" expanded="false" />
-                <element signature="e#3931#3932#0" expanded="true" />
-                <element signature="e#4013#4014#0" expanded="true" />
-                <element signature="e#5064#5065#0" expanded="true" />
-                <element signature="e#5136#5137#0" expanded="true" />
+                <element signature="method#setControlWord#0;class#Buffer#0" expanded="false" />
+                <element signature="method#getSibling#0;class#Buffer#0" expanded="false" />
+                <element signature="method#getChildren#0;class#Buffer#0" expanded="false" />
+                <element signature="method#getChildrenStatus#0;class#Buffer#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -74,6 +80,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>buffer size</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -85,9 +96,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/Buffer.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/BufferManager.java" />
-        <option value="$PROJECT_DIR$/src/Buffer.java" />
       </list>
     </option>
   </component>
@@ -259,25 +270,25 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4229692" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4229692" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31270358" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913166" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39978212" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39915967" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -287,13 +298,19 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Buffer.java</url>
-          <line>154</line>
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>9</line>
           <properties />
-          <option name="timeStamp" value="13" />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="15" />
+      <option name="time" value="23" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -312,12 +329,12 @@
           <caret line="85" column="56" lean-forward="false" selection-start-line="85" selection-start-column="56" selection-end-line="85" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#BufferManager#0;class#BufferManager#0" expanded="false" />
             <element signature="method#buildBufferList#0;class#BufferManager#0" expanded="false" />
-            <element signature="method#requestBuffer#0;class#BufferManager#0" expanded="false" />
             <element signature="method#checkTightConstraint#0;class#BufferManager#0" expanded="false" />
             <element signature="method#returnBuffer#0;class#BufferManager#0" expanded="false" />
             <element signature="method#getStatus#0;class#BufferManager#0" expanded="false" />
+            <element signature="method#bufferDebug#0;class#BufferManager#0" expanded="false" />
+            <element signature="method#getBufferListStatus#0;class#BufferManager#0" expanded="false" />
             <element signature="method#getBuffer#0;class#BufferManager#0" expanded="false" />
           </folding>
         </state>
@@ -328,13 +345,18 @@
         <state relative-caret-position="2226">
           <caret line="165" column="1" lean-forward="false" selection-start-line="165" selection-start-column="1" selection-end-line="165" selection-end-column="1" />
           <folding>
-            <element signature="e#1286#1287#0" expanded="true" />
-            <element signature="e#1349#1350#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#Buffer#0;class#Buffer#0" expanded="false" />
+            <element signature="method#Buffer#1;class#Buffer#0" expanded="false" />
+            <element signature="method#Buffer#2;class#Buffer#0" expanded="false" />
+            <element signature="method#Buffer#3;class#Buffer#0" expanded="false" />
+            <element signature="method#checkRequest#0;class#Buffer#0" expanded="false" />
+            <element signature="method#splitBuffer#0;class#Buffer#0" expanded="false" />
             <element signature="method#reclaimBuffer#0;class#Buffer#0" expanded="false" />
-            <element signature="e#3931#3932#0" expanded="true" />
-            <element signature="e#4013#4014#0" expanded="true" />
-            <element signature="e#5064#5065#0" expanded="true" />
-            <element signature="e#5136#5137#0" expanded="true" />
+            <element signature="method#setControlWord#0;class#Buffer#0" expanded="false" />
+            <element signature="method#getSibling#0;class#Buffer#0" expanded="false" />
+            <element signature="method#getChildren#0;class#Buffer#0" expanded="false" />
+            <element signature="method#getChildrenStatus#0;class#Buffer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -353,12 +375,12 @@
           <caret line="85" column="56" lean-forward="false" selection-start-line="85" selection-start-column="56" selection-end-line="85" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#BufferManager#0;class#BufferManager#0" expanded="false" />
             <element signature="method#buildBufferList#0;class#BufferManager#0" expanded="false" />
-            <element signature="method#requestBuffer#0;class#BufferManager#0" expanded="false" />
             <element signature="method#checkTightConstraint#0;class#BufferManager#0" expanded="false" />
             <element signature="method#returnBuffer#0;class#BufferManager#0" expanded="false" />
             <element signature="method#getStatus#0;class#BufferManager#0" expanded="false" />
+            <element signature="method#bufferDebug#0;class#BufferManager#0" expanded="false" />
+            <element signature="method#getBufferListStatus#0;class#BufferManager#0" expanded="false" />
             <element signature="method#getBuffer#0;class#BufferManager#0" expanded="false" />
           </folding>
         </state>
@@ -369,13 +391,18 @@
         <state relative-caret-position="2226">
           <caret line="165" column="1" lean-forward="false" selection-start-line="165" selection-start-column="1" selection-end-line="165" selection-end-column="1" />
           <folding>
-            <element signature="e#1286#1287#0" expanded="true" />
-            <element signature="e#1349#1350#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#Buffer#0;class#Buffer#0" expanded="false" />
+            <element signature="method#Buffer#1;class#Buffer#0" expanded="false" />
+            <element signature="method#Buffer#2;class#Buffer#0" expanded="false" />
+            <element signature="method#Buffer#3;class#Buffer#0" expanded="false" />
+            <element signature="method#checkRequest#0;class#Buffer#0" expanded="false" />
+            <element signature="method#splitBuffer#0;class#Buffer#0" expanded="false" />
             <element signature="method#reclaimBuffer#0;class#Buffer#0" expanded="false" />
-            <element signature="e#3931#3932#0" expanded="true" />
-            <element signature="e#4013#4014#0" expanded="true" />
-            <element signature="e#5064#5065#0" expanded="true" />
-            <element signature="e#5136#5137#0" expanded="true" />
+            <element signature="method#setControlWord#0;class#Buffer#0" expanded="false" />
+            <element signature="method#getSibling#0;class#Buffer#0" expanded="false" />
+            <element signature="method#getChildren#0;class#Buffer#0" expanded="false" />
+            <element signature="method#getChildrenStatus#0;class#Buffer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -394,12 +421,12 @@
           <caret line="85" column="56" lean-forward="false" selection-start-line="85" selection-start-column="56" selection-end-line="85" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#BufferManager#0;class#BufferManager#0" expanded="false" />
             <element signature="method#buildBufferList#0;class#BufferManager#0" expanded="false" />
-            <element signature="method#requestBuffer#0;class#BufferManager#0" expanded="false" />
             <element signature="method#checkTightConstraint#0;class#BufferManager#0" expanded="false" />
             <element signature="method#returnBuffer#0;class#BufferManager#0" expanded="false" />
             <element signature="method#getStatus#0;class#BufferManager#0" expanded="false" />
+            <element signature="method#bufferDebug#0;class#BufferManager#0" expanded="false" />
+            <element signature="method#getBufferListStatus#0;class#BufferManager#0" expanded="false" />
             <element signature="method#getBuffer#0;class#BufferManager#0" expanded="false" />
           </folding>
         </state>
@@ -410,13 +437,18 @@
         <state relative-caret-position="2394">
           <caret line="165" column="1" lean-forward="false" selection-start-line="165" selection-start-column="1" selection-end-line="165" selection-end-column="1" />
           <folding>
-            <element signature="e#1286#1287#0" expanded="true" />
-            <element signature="e#1349#1350#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#Buffer#0;class#Buffer#0" expanded="false" />
+            <element signature="method#Buffer#1;class#Buffer#0" expanded="false" />
+            <element signature="method#Buffer#2;class#Buffer#0" expanded="false" />
+            <element signature="method#Buffer#3;class#Buffer#0" expanded="false" />
+            <element signature="method#checkRequest#0;class#Buffer#0" expanded="false" />
+            <element signature="method#splitBuffer#0;class#Buffer#0" expanded="false" />
             <element signature="method#reclaimBuffer#0;class#Buffer#0" expanded="false" />
-            <element signature="e#3931#3932#0" expanded="true" />
-            <element signature="e#4013#4014#0" expanded="true" />
-            <element signature="e#5064#5065#0" expanded="true" />
-            <element signature="e#5136#5137#0" expanded="true" />
+            <element signature="method#setControlWord#0;class#Buffer#0" expanded="false" />
+            <element signature="method#getSibling#0;class#Buffer#0" expanded="false" />
+            <element signature="method#getChildren#0;class#Buffer#0" expanded="false" />
+            <element signature="method#getChildrenStatus#0;class#Buffer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -440,13 +472,18 @@
         <state relative-caret-position="825">
           <caret line="57" column="38" lean-forward="false" selection-start-line="57" selection-start-column="38" selection-end-line="57" selection-end-column="38" />
           <folding>
-            <element signature="e#1286#1287#0" expanded="true" />
-            <element signature="e#1349#1350#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#Buffer#0;class#Buffer#0" expanded="false" />
+            <element signature="method#Buffer#1;class#Buffer#0" expanded="false" />
+            <element signature="method#Buffer#2;class#Buffer#0" expanded="false" />
+            <element signature="method#Buffer#3;class#Buffer#0" expanded="false" />
+            <element signature="method#checkRequest#0;class#Buffer#0" expanded="false" />
+            <element signature="method#splitBuffer#0;class#Buffer#0" expanded="false" />
             <element signature="method#reclaimBuffer#0;class#Buffer#0" expanded="false" />
-            <element signature="e#3931#3932#0" expanded="true" />
-            <element signature="e#4013#4014#0" expanded="true" />
-            <element signature="e#5064#5065#0" expanded="true" />
-            <element signature="e#5136#5137#0" expanded="true" />
+            <element signature="method#setControlWord#0;class#Buffer#0" expanded="false" />
+            <element signature="method#getSibling#0;class#Buffer#0" expanded="false" />
+            <element signature="method#getChildren#0;class#Buffer#0" expanded="false" />
+            <element signature="method#getChildrenStatus#0;class#Buffer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -463,13 +500,18 @@
         <state relative-caret-position="735">
           <caret line="67" column="48" lean-forward="false" selection-start-line="67" selection-start-column="48" selection-end-line="67" selection-end-column="48" />
           <folding>
-            <element signature="e#1286#1287#0" expanded="true" />
-            <element signature="e#1349#1350#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#Buffer#0;class#Buffer#0" expanded="false" />
+            <element signature="method#Buffer#1;class#Buffer#0" expanded="false" />
+            <element signature="method#Buffer#2;class#Buffer#0" expanded="false" />
+            <element signature="method#Buffer#3;class#Buffer#0" expanded="false" />
+            <element signature="method#checkRequest#0;class#Buffer#0" expanded="false" />
+            <element signature="method#splitBuffer#0;class#Buffer#0" expanded="false" />
             <element signature="method#reclaimBuffer#0;class#Buffer#0" expanded="false" />
-            <element signature="e#3931#3932#0" expanded="true" />
-            <element signature="e#4013#4014#0" expanded="true" />
-            <element signature="e#5064#5065#0" expanded="true" />
-            <element signature="e#5136#5137#0" expanded="true" />
+            <element signature="method#setControlWord#0;class#Buffer#0" expanded="false" />
+            <element signature="method#getSibling#0;class#Buffer#0" expanded="false" />
+            <element signature="method#getChildren#0;class#Buffer#0" expanded="false" />
+            <element signature="method#getChildrenStatus#0;class#Buffer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -500,54 +542,64 @@
         <state relative-caret-position="833">
           <caret line="67" column="48" lean-forward="false" selection-start-line="67" selection-start-column="48" selection-end-line="67" selection-end-column="48" />
           <folding>
-            <element signature="e#1286#1287#0" expanded="true" />
-            <element signature="e#1349#1350#0" expanded="true" />
-            <element signature="method#reclaimBuffer#0;class#Buffer#0" expanded="false" />
-            <element signature="e#3931#3932#0" expanded="true" />
-            <element signature="e#4013#4014#0" expanded="true" />
-            <element signature="e#5064#5065#0" expanded="true" />
-            <element signature="e#5136#5137#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BufferManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="111" column="59" lean-forward="false" selection-start-line="111" selection-start-column="59" selection-end-line="111" selection-end-column="59" />
-          <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#BufferManager#0;class#BufferManager#0" expanded="false" />
-            <element signature="method#buildBufferList#0;class#BufferManager#0" expanded="false" />
-            <element signature="method#requestBuffer#0;class#BufferManager#0" expanded="false" />
-            <element signature="method#checkTightConstraint#0;class#BufferManager#0" expanded="false" />
-            <element signature="method#returnBuffer#0;class#BufferManager#0" expanded="false" />
-            <element signature="method#getStatus#0;class#BufferManager#0" expanded="false" />
-            <element signature="method#getBuffer#0;class#BufferManager#0" expanded="false" />
+            <element signature="method#Buffer#0;class#Buffer#0" expanded="false" />
+            <element signature="method#Buffer#1;class#Buffer#0" expanded="false" />
+            <element signature="method#Buffer#2;class#Buffer#0" expanded="false" />
+            <element signature="method#Buffer#3;class#Buffer#0" expanded="false" />
+            <element signature="method#checkRequest#0;class#Buffer#0" expanded="false" />
+            <element signature="method#splitBuffer#0;class#Buffer#0" expanded="false" />
+            <element signature="method#reclaimBuffer#0;class#Buffer#0" expanded="false" />
+            <element signature="method#setControlWord#0;class#Buffer#0" expanded="false" />
+            <element signature="method#getSibling#0;class#Buffer#0" expanded="false" />
+            <element signature="method#getChildren#0;class#Buffer#0" expanded="false" />
+            <element signature="method#getChildrenStatus#0;class#Buffer#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Buffer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="180" column="44" lean-forward="true" selection-start-line="180" selection-start-column="44" selection-end-line="180" selection-end-column="44" />
+        <state relative-caret-position="56">
+          <caret line="149" column="45" lean-forward="false" selection-start-line="149" selection-start-column="45" selection-end-line="149" selection-end-column="45" />
           <folding>
-            <element signature="e#1286#1287#0" expanded="true" />
-            <element signature="e#1349#1350#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#Buffer#0;class#Buffer#0" expanded="false" />
+            <element signature="method#Buffer#1;class#Buffer#0" expanded="false" />
+            <element signature="method#Buffer#2;class#Buffer#0" expanded="false" />
+            <element signature="method#Buffer#3;class#Buffer#0" expanded="false" />
+            <element signature="method#checkRequest#0;class#Buffer#0" expanded="false" />
+            <element signature="method#splitBuffer#0;class#Buffer#0" expanded="false" />
             <element signature="method#reclaimBuffer#0;class#Buffer#0" expanded="false" />
-            <element signature="e#3931#3932#0" expanded="true" />
-            <element signature="e#4013#4014#0" expanded="true" />
-            <element signature="e#5064#5065#0" expanded="true" />
-            <element signature="e#5136#5137#0" expanded="true" />
+            <element signature="method#setControlWord#0;class#Buffer#0" expanded="false" />
+            <element signature="method#getSibling#0;class#Buffer#0" expanded="false" />
+            <element signature="method#getChildren#0;class#Buffer#0" expanded="false" />
+            <element signature="method#getChildrenStatus#0;class#Buffer#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BufferManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="164" column="61" lean-forward="true" selection-start-line="164" selection-start-column="61" selection-end-line="164" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#buildBufferList#0;class#BufferManager#0" expanded="false" />
+            <element signature="method#checkTightConstraint#0;class#BufferManager#0" expanded="false" />
+            <element signature="method#returnBuffer#0;class#BufferManager#0" expanded="false" />
+            <element signature="method#getStatus#0;class#BufferManager#0" expanded="false" />
+            <element signature="method#bufferDebug#0;class#BufferManager#0" expanded="false" />
+            <element signature="method#getBufferListStatus#0;class#BufferManager#0" expanded="false" />
+            <element signature="method#getBuffer#0;class#BufferManager#0" expanded="false" />
           </folding>
         </state>
       </provider>
