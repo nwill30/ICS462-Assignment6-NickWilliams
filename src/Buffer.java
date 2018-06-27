@@ -148,7 +148,12 @@ public class Buffer {
     }
 
     private void setControlWord(int request) {
-        this.controlWord = this.thisBuffer.toString() + " " + getSibling();
+        if(this.parent !=null){
+            this.controlWord = this.thisBuffer.toString() + " " + getSibling();
+
+        }else {
+            this.controlWord = this.thisBuffer.toString();
+        }
         this.bufferFree = false;
     }
 

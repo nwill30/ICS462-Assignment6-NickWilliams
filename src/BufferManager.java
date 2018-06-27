@@ -53,19 +53,20 @@ public class BufferManager {
     }
 
     public Object requestBuffer(int requestSize){
-        String placeholder = "0";
-
+        String placeholder = "-1";
+        Object requestResponse = null;
         for(int i = 0;i<bufferList.size();i++){
-            Object requestResponse = bufferList.get(i).requestBuffer(requestSize);
-            if(requestResponse == "-2"){
-                return "-2";
-            }else if (requestResponse == "-1"){
-                return "-1";
-            }else {
-                this.tightPool = checkTightConstraint();
-                return requestResponse;
+            if(bufferList.get(i).isBufferFree()){
+                requestResponse = bufferList.get(i).requestBuffer(requestSize);
+                if(requestResponse == "-2"){
+                    return "-2";
+                }else if (requestResponse == "-1"){
+                    return "-1";
+                }else {
+                    this.tightPool = checkTightConstraint();
+                    return requestResponse;
+                }
             }
-
         }
         setStatus(bufferDebug());
         return placeholder;
@@ -87,8 +88,6 @@ public class BufferManager {
         for(int i = 0;i < bufferList.size();i++){
             if(bufferList.get(i).reclaimBuffer(addess)==addess){
                 this.tightPool = checkTightConstraint();
-                System.out.print(String.format("Buffer %s reclaimed from parent %s, %s in the buffer list. ",addess,bufferList.get(i),i));
-                System.out.println("The number of remaining buffers is "+bufferList.size());
                 break;
             }
         }
@@ -170,7 +169,7 @@ public class BufferManager {
             }else if(bufferCountList.get(i).equals("15 size buffer")){
                 bufferStatusList[5] = bufferStatusList[5] +1;
             }else if(bufferCountList.get(i).equals("7 size buffer")){
-                bufferStatusList[5] = bufferStatusList[6] +1;
+                bufferStatusList[6] = bufferStatusList[6] +1;
             }
         }
 
