@@ -54,7 +54,7 @@ public class Main {
         testBuffer5.BufferManager(10,511,7);
         ArrayList<Object> requestResponse5 = new ArrayList<>();
         outputData.add("Request 19 254 size buffers");
-        outputData.add("Expected values: 0 510 buffers, 1 254 size buffers, 0 126 size buffers,  0 62 size buffers, 0 30 size buffers, 0 14 size buffers,  0 6 size buffers Status Tight ");
+        outputData.add("Expected values: 0 510 buffers, 19 254 size buffers, 0 126 size buffers,  0 62 size buffers, 0 30 size buffers, 0 14 size buffers,  0 6 size buffers Status Tight ");
         int[] test5 = {253,253,253,253,253,253,253,253,253,253,253,253,253,253,253,253,253,253,253};
         outputData = runTestDriver(test5,testBuffer5,outputData, requestResponse5);
 
