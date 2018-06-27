@@ -159,17 +159,22 @@ public class Buffer {
     }
 
     /**
-     *
+     * The control word contains the buffer size and a pointer to the next buffer in the pool
      * */
     private void setControlWord(int request) {
         if(this.parent !=null){
-            this.controlWord = this.thisBuffer.toString() + " " + getSibling();
+            this.controlWord = this.currentSize + " " + getSibling();
         }else {
-            this.controlWord = this.thisBuffer.toString();
+            this.controlWord = this.thisBuffer.toString()+"";
         }
         this.bufferFree = false;
     }
 
+    /**
+     * The sibling is initially set to null
+     * An array is created for the return values of the getChildren method requested from the current Buffers parent
+     * Which ever buffer in the string does not match the current Buffer is returned as the current Buffer's sibling
+     * */
     private String getSibling() {
         String sibling = "null";
         ArrayList<Buffer> siblings = this.parent.getChildren();
@@ -180,13 +185,20 @@ public class Buffer {
         }
     }
 
+    /**
+     * Both of the current buffer's children are set to a Buffer array and returned to the calling method
+     * */
     private ArrayList<Buffer> getChildren() {
         ArrayList<Buffer> children = new ArrayList<>();
-        children.add(childA);
-        children.add(childB);
+        children.add(this.childA);
+        children.add(this.childB);
         return children;
     }
 
+    /**
+     * Each child in the Buffer is returned to the calling method in the childrenStatus Array
+     * If the requested child is split then it along with it's children are added to the childrenStatus Array
+     * */
     public ArrayList getChildrenStatus() {
         ArrayList childrenStatus = new ArrayList();
         if(this.childA!= null && !this.childA.isBufferSplit()){
@@ -194,7 +206,6 @@ public class Buffer {
         }else if(this.childA != null){
             childrenStatus.addAll(this.childA.getChildrenStatus());
         }
-
         if(this.childB != null && !this.childB.isBufferSplit()){
             childrenStatus.add(this.childB.getStatus());
         }else if(this.childB != null){
@@ -203,6 +214,9 @@ public class Buffer {
         return childrenStatus;
     }
 
+    /**
+     * return the buffer and it's current size
+     * */
     public String getStatus() {
         return String.format("%s size buffer", this.currentSize);
     }
