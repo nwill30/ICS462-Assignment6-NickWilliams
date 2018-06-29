@@ -38,7 +38,7 @@ Free Buffer Count:
 0 30 size buffers
 0 14 size buffers
 0 6 size buffers
-Actual = Assigned address: Buffer@1b6d3586
+Actual = Assigned address: Buffer@161cd475
 Free Buffer Count:
 9 510 size buffers
 1 254 size buffers
@@ -46,17 +46,7 @@ Free Buffer Count:
 1 62 size buffers
 1 30 size buffers
 1 14 size buffers
-1 6 size buffers
-Return buffer size: 7
-Expected values: 10 510 size buffers, Status OK
-Free Buffer Count:
-10 510 size buffers
-0 254 size buffers
-0 126 size buffers
-0 62 size buffers
-0 30 size buffers
-0 14 size buffers
-0 6 size buffers
+2 6 size buffers
 Status: OK
 Requesting 10 510 buffers
 Expected values:0 510 buffers, 0 for all buffers, Status Tight 
@@ -68,16 +58,16 @@ Free Buffer Count:
 0 30 size buffers
 0 14 size buffers
 0 6 size buffers
-Actual = Assigned address: Buffer@74a14482
-Actual = Assigned address: Buffer@1540e19d
-Actual = Assigned address: Buffer@677327b6
-Actual = Assigned address: Buffer@14ae5a5
-Actual = Assigned address: Buffer@7f31245a
-Actual = Assigned address: Buffer@6d6f6e28
-Actual = Assigned address: Buffer@135fbaa4
-Actual = Assigned address: Buffer@45ee12a7
-Actual = Assigned address: Buffer@330bedb4
-Actual = Assigned address: Buffer@2503dbd3
+Actual = Assigned address: Buffer@532760d8
+Actual = Assigned address: Buffer@57fa26b7
+Actual = Assigned address: Buffer@5f8ed237
+Actual = Assigned address: Buffer@2f410acf
+Actual = Assigned address: Buffer@47089e5f
+Actual = Assigned address: Buffer@4141d797
+Actual = Assigned address: Buffer@68f7aae2
+Actual = Assigned address: Buffer@4f47d241
+Actual = Assigned address: Buffer@4c3e4790
+Actual = Assigned address: Buffer@38cccef
 Free Buffer Count:
 0 510 size buffers
 0 254 size buffers
@@ -90,58 +80,94 @@ Status: tight
 Requesting 62
 Expected values: -1, Status Tight
 Free Buffer Count:
-10 510 size buffers
+0 510 size buffers
 0 254 size buffers
 0 126 size buffers
 0 62 size buffers
 0 30 size buffers
 0 14 size buffers
 0 6 size buffers
-Actual = Assigned address: Buffer@4b67cf4d
-Free Buffer Count:
-9 510 size buffers
-1 254 size buffers
-1 126 size buffers
-1 62 size buffers
-0 30 size buffers
-0 14 size buffers
-0 6 size buffers
-Status: OK
-Request 19 254 size buffers
-Expected values: 0 510 buffers, 1 254 size buffers, 0 126 size buffers,  0 62 size buffers, 0 30 size buffers, 0 14 size buffers,  0 6 size buffers Status Tight 
-Free Buffer Count:
-10 510 size buffers
-0 254 size buffers
-0 126 size buffers
-0 62 size buffers
-0 30 size buffers
-0 14 size buffers
-0 6 size buffers
-Actual = Assigned address: Buffer@12a3a380
-Actual = Assigned address: Buffer@5cad8086
-Actual = Assigned address: Buffer@61bbe9ba
-Actual = Assigned address: Buffer@511d50c0
-Actual = Assigned address: Buffer@5e2de80c
-Actual = Assigned address: Buffer@266474c2
-Actual = Assigned address: Buffer@5e481248
-Actual = Assigned address: Buffer@63947c6b
-Actual = Assigned address: Buffer@355da254
-Actual = Assigned address: Buffer@d716361
-Actual = Assigned address: 0
-Actual = Assigned address: 0
-Actual = Assigned address: 0
-Actual = Assigned address: 0
-Actual = Assigned address: 0
-Actual = Assigned address: 0
-Actual = Assigned address: 0
-Actual = Assigned address: 0
-Actual = Assigned address: 0
+Actual = Assigned address: -1
 Free Buffer Count:
 0 510 size buffers
-10 254 size buffers
+0 254 size buffers
 0 126 size buffers
 0 62 size buffers
 0 30 size buffers
 0 14 size buffers
 0 6 size buffers
+Status: tight
+Request 19 254 size buffers
+Expected values: 0 510 buffers, 19 254 size buffers, 0 126 size buffers,  0 62 size buffers, 0 30 size buffers, 0 14 size buffers,  0 6 size buffers Status Tight 
+Free Buffer Count:
+10 510 size buffers
+0 254 size buffers
+0 126 size buffers
+0 62 size buffers
+0 30 size buffers
+0 14 size buffers
+0 6 size buffers
+Actual = Assigned address: Buffer@27ddd392
+Actual = Assigned address: Buffer@5679c6c6
+Actual = Assigned address: Buffer@7cef4e59
+Actual = Assigned address: Buffer@19e1023e
+Actual = Assigned address: Buffer@2db0f6b2
+Actual = Assigned address: Buffer@64b8f8f4
+Actual = Assigned address: Buffer@3a4afd8d
+Actual = Assigned address: Buffer@3cd1f1c8
+Actual = Assigned address: Buffer@3339ad8e
+Actual = Assigned address: Buffer@1996cd68
+Actual = Assigned address: Buffer@6d1e7682
+Actual = Assigned address: Buffer@555590
+Actual = Assigned address: Buffer@3c679bde
+Actual = Assigned address: Buffer@424c0bc4
+Actual = Assigned address: Buffer@8807e25
+Actual = Assigned address: Buffer@16b4a017
+Actual = Assigned address: Buffer@2a098129
+Actual = Assigned address: Buffer@2a3046da
+Actual = Assigned address: Buffer@12f40c25
+Free Buffer Count:
+0 510 size buffers
+20 254 size buffers
+0 126 size buffers
+0 62 size buffers
+0 30 size buffers
+0 14 size buffers
+0 6 size buffers
+Status: tight
+Request 5 size 6, 2 size 254, 2 size 126, 7 510 size
+Expected Values:  1 510 size buffers,  0 254 size buffer, 1 126 size buffer, 1 62 size buffer, 0 30 size buffer, 1 14 size buffer 	and 1 6 size buffer, Status tight
+Free Buffer Count:
+10 510 size buffers
+0 254 size buffers
+0 126 size buffers
+0 62 size buffers
+0 30 size buffers
+0 14 size buffers
+0 6 size buffers
+Actual = Assigned address: Buffer@5cbc508c
+Actual = Assigned address: Buffer@63e31ee
+Actual = Assigned address: Buffer@567d299b
+Actual = Assigned address: Buffer@59690aa4
+Actual = Assigned address: Buffer@574caa3f
+Actual = Assigned address: Buffer@1761e840
+Actual = Assigned address: Buffer@5ecddf8f
+Actual = Assigned address: Buffer@27abe2cd
+Actual = Assigned address: Buffer@6fdb1f78
+Actual = Assigned address: Buffer@29444d75
+Actual = Assigned address: Buffer@2280cdac
+Actual = Assigned address: Buffer@1517365b
+Actual = Assigned address: Buffer@4fccd51b
+Actual = Assigned address: Buffer@44e81672
+Actual = Assigned address: Buffer@60215eee
+Actual = Assigned address: -1
+Actual = Assigned address: -1
+Free Buffer Count:
+0 510 size buffers
+3 254 size buffers
+9 126 size buffers
+5 62 size buffers
+5 30 size buffers
+5 14 size buffers
+10 6 size buffers
 Status: tight
